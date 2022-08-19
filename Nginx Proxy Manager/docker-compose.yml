@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - /root/docker/nginx-proxy-manager/data:/data
+      - /root/docker/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
+	
+# 初始账号 admin@example.com
+# 初始密码 changeme
