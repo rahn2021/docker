@@ -35,3 +35,5 @@ services:
     environment:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD : helloworldmysqql
+    volumes:
+      - /root/docker/wordpress/phpmyadmin:/var/www/html/phpmyadmin 
