@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    alist_docker:
+        restart: always
+        volumes:
+            - '/root/docker/alist/etc/alist:/opt/alist/data'
+        ports:
+            - '6044:5244'
+        container_name: alist_docker
+        image: 'xhofe/alist:latest'
