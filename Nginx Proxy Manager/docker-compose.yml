@@ -10,6 +10,9 @@ services:
     volumes:
       - /root/docker/nginx-proxy-manager/data:/data
       - /root/docker/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
-	
+      
+
+
+
 # 初始账号 admin@example.com
 # 初始密码 changeme
