@@ -35,9 +35,9 @@ function wordpress_nome(){
     docker-compose up -d
     ufw allow 8080/tcp
     ufw allow 3333/tcp
-    echo https://localhost:8080
+    echo https://172.17.0.1:8080
     echo https://nav.yuitaku.tk
-    echo https://localhost:3333
+    echo https://172.17.0.1:3333
     echo https://phpmyadmin.yuitaku.tk
 }
 
@@ -46,7 +46,7 @@ function halo_nome(){
     ufw allow 8090/tcp
     docker pull halohub/halo:latest
     docker run -it -d --name halo -p 8090:8090 -v ~/.halo:/root/.halo halohub/halo:latest
-    echo https://localhost:8090
+    echo https://172.17.0.1:8090
     echo https://blog.yuitaku.tk
 }
 
