@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+    sshwifty:
+        container_name: sshwifty
+        ports:
+            - '8182:8182'
+        image: 'niruix/sshwifty:latest'
