@@ -21,8 +21,8 @@ function sshwifty_nome(){
     ufw allow 8182/tcp
     wget https://raw.githubusercontent.com/rahn2021/docker/main/sshwifty/docker-compose.yml
     docker-compose up -d
-    echo https://localhost:8182
-    echo https://ssh.yuitaku.tk
+    echo https://172.17.0.1:8182
+    echo https://ssh.nome.tk
 }
 
 function wordpress_nome(){
