@@ -1,9 +1,13 @@
 services:
   tachidesk_cn:
-    image: dezhao/tachidesk_cn:0.6.3
+    image: dezhao/tachidesk_cn
     container_name: tachidesk_cn
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
     volumes:
-      - ./data:/root/.local/share/Tachidesk
+      - /root/docker/tachidesk_cn/data:/root/.local/share/Tachidesk
     ports:
       - 4567:4567
     restart: always
