@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  tachidesk:
+    image: ghcr.io/suwayomi/tachidesk
+    container_name: tachidesk
+    restart: unless-stopped
+    ports:
+      - 4567:4567
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - /root/docker/tachidesk/data:/./home/suwayomi/.local/share/Tachidesk
