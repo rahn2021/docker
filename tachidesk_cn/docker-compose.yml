@@ -1,0 +1,9 @@
+services:
+  tachidesk_cn:
+    image: dezhao/tachidesk_cn:0.6.3
+    container_name: tachidesk_cn
+    volumes:
+      - ./data:/root/.local/share/Tachidesk
+    ports:
+      - 4567:4567
+    restart: always
