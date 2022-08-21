@@ -1,0 +1,8 @@
+{
+    "server":["::0","0.0.0.0"],
+    "server_port":56388,
+    "method":"chacha20-ietf-poly1305",
+    "password":"3yOQW0IzE9iOj7oXMjSN5g==",
+    "mode":"tcp_and_udp",
+    "fast_open":false
+}
