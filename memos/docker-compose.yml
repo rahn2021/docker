@@ -5,6 +5,6 @@ services:
         ports:
             - '5230:5230'
         volumes:
-            - '/root/docker/memos/:/var/opt/memos'
+            - '/root/Docker/Memos/:/var/opt/memos'
         command: --mode prod --port 5230
         image: 'neosmemo/memos:latest'
