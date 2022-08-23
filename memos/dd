@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    memos:
+        container_name: memos
+        ports:
+            - '5230:5230'
+        volumes:
+            - '/root/docker/memos/:/var/opt/memos'
+        command: --mode prod --port 5230
+        image: 'neosmemo/memos:latest'
